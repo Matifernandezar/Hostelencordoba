@@ -1,0 +1,46 @@
+html, body { max-width: 100%; overflow-x: hidden; }
+.btn { text-align: center; }
+.location-address { max-width: 100%; white-space: normal; line-height: 1.35; }
+img { height: auto; }
+
+@media (max-width: 860px) {
+  .stay-grid { grid-template-columns: 1fr; }
+  .stay-card:last-child {
+    grid-column: auto;
+    max-width: none;
+    width: 100%;
+    justify-self: stretch;
+  }
+  .stay-card { width: 100%; }
+  .stay-card__image { aspect-ratio: 16 / 10; }
+  .guide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .location-hero__grid,
+  .guide-hero__grid,
+  .detail-grid,
+  .intro-grid { grid-template-columns: minmax(0, 1fr); }
+  .service-grid { grid-template-columns: minmax(0, 1fr); }
+  .service-content { padding-left: 0; padding-right: 0; }
+  .location-hero__image,
+  .guide-hero__image { width: 100%; }
+  .final-cta { width: var(--shell); }
+}
+
+@media (max-width: 620px) {
+  .shell { width: calc(100% - 28px); }
+  .guide-grid { grid-template-columns: 1fr; }
+  .stay-card__image { aspect-ratio: 4 / 3; }
+  .stay-card__body { padding: 20px; }
+  .stay-card h3 { font-size: 21px; }
+  .location-address { display: flex; width: 100%; }
+  .topbar__inner a { text-align: center; }
+  .location-hero__actions,
+  .hero__actions,
+  .final-cta__actions { width: 100%; }
+  .location-hero__actions .btn,
+  .hero__actions .btn,
+  .final-cta__actions .btn,
+  .detail-aside .btn { width: 100%; }
+  .guide-hero__image,
+  .location-hero__image { border-radius: 20px; }
+  .footer-bottom { align-items: flex-start; }
+}
