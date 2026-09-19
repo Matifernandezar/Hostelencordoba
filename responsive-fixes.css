@@ -43,4 +43,68 @@ img { height: auto; }
   .guide-hero__image,
   .location-hero__image { border-radius: 20px; }
   .footer-bottom { align-items: flex-start; }
+
+  .intro-grid {
+    gap: 32px;
+  }
+
+  .media-card {
+    width: 100%;
+    max-width: none;
+    display: grid;
+    gap: 12px;
+  }
+
+  .media-card > img {
+    width: 100%;
+    height: clamp(245px, 72vw, 320px) !important;
+    aspect-ratio: auto !important;
+    object-fit: cover;
+    object-position: center 38%;
+    border-radius: 22px;
+  }
+
+  .media-card__badge {
+    position: static;
+    margin: 0;
+    width: 100%;
+    min-width: 0;
+    padding: 13px 16px;
+    border-radius: 15px;
+    border: 1px solid var(--line);
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: var(--soft);
+  }
+
+  .media-card__badge span,
+  .media-card__badge strong {
+    margin: 0;
+  }
+
+  .media-card__badge strong {
+    font-size: 16px;
+  }
+
+  .content-block h2 {
+    font-size: clamp(34px, 10.5vw, 42px);
+    line-height: 1.02;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    right: 14px;
+    bottom: calc(18px + env(safe-area-inset-bottom));
+    box-shadow: 0 10px 26px rgba(17, 91, 45, .28);
+  }
+
+  .whatsapp-float svg {
+    width: 27px;
+    height: 27px;
+  }
 }
