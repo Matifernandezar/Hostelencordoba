@@ -1,3 +1,10 @@
+const responsiveCss = document.createElement('link');
+responsiveCss.rel = 'stylesheet';
+responsiveCss.href = '/responsive-fixes.css?v=20260919';
+if (!document.querySelector('link[href*="responsive-fixes.css"]')) {
+  document.head.appendChild(responsiveCss);
+}
+
 const menuBtn = document.getElementById('menu-btn');
 const nav = document.querySelector('.main-nav');
 const navLinks = document.querySelectorAll('#nav-links a');
